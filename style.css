@@ -12,7 +12,7 @@ button, [placeholder] {font-family: inherit; font-size: 1em;}
   url(events-heavenly-header.jpg) 50%/cover; height: 100vh;
   display: flex; flex-flow: wrap; align-items: center;}
 #home>nav {background: #111; font-size: 25px; width: 0; overflow: hidden;
-  height: 100%; position: fixed;}
+  height: 100vh; position: fixed;}
 #home>nav>:hover {color: #d62e33;}
 #home button {background: 0; padding: 20px 20px 5px; border: 0; cursor: pointer;}
 .x {float: right;}
