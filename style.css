@@ -1,0 +1,85 @@
+.o {background: #f8f9fa; position: fixed; inset: 0; z-index: 1;}
+
+body {overflow: hidden; color: #555; font-family: 'Reem Kufi', sans-serif;}
+body, h1, h2, #band, #band p {margin: 0;}
+#home, #band h2, #countdown>span, #contact button {color: #fff;}
+.c {box-sizing: border-box; padding: 100px 13px;}
+a, button {color: inherit; -webkit-tap-highlight-color: #0000;}
+a {text-decoration: none;}
+button, [placeholder] {font-family: inherit; font-size: 1em;}
+
+#home {background: linear-gradient(#d62e3399,#d62e3399),
+  url(events-heavenly-header.jpg) 50%/cover; height: 100vh;
+  display: flex; flex-flow: wrap; align-items: center;}
+#home>nav {background: #111; font-size: 25px; width: 0; overflow: hidden;
+  height: 100%; position: fixed;}
+#home>nav>:hover {color: #d62e33;}
+#home button {background: 0; padding: 20px 20px 5px; border: 0; cursor: pointer;}
+.x {float: right;}
+.x::before {content: '\f00d';}
+#home>nav>[href='#home'] {clear: right;}
+#home>nav>a {display: block; padding: 20px;}
+@media (height<400px) {#home>nav {font-size: 20px;} #home>nav>a {padding: 12px;}}
+.b {white-space: pre; font-size: 25px;}
+.b::before {content: '\f0c9';}
+#home>section {padding: 13px; margin: auto; text-align: center;}
+h1 {font-weight: 500; font-size: 60px; line-height: 1;}
+h1::before {content: '\064f'; font-weight: 700; vertical-align: 44px;}
+
+#band {list-style: none; text-align: center;}
+#band h2 {background: #d62e3399; font-weight: 500; font-size: 1.75em;
+  line-height: 1.2; padding: 10px; cursor: pointer;}
+#band>:nth-child(1)>h2::before {content: '\fe74'; font-size: 2em;
+  line-height: .1;}
+#band p {background: #ccc; padding: 10px;}
+#band>:not(:nth-child(1))>p {display: none;}
+
+#countdown {background: linear-gradient(#d62e3399,#d62e3399),
+  url(invitation-2508607__340.jpg) 25%/cover; display: flex; gap: 25px;}
+#countdown>span {font-weight: 500; font-size: 30px;
+  text-align: center; box-sizing: border-box; padding: 40px; border: solid 1px;}
+
+#contact>:is(h2,p) {text-align: center;}
+#contact :is(h2,h3,button) {text-transform: uppercase;}
+#contact>h2 {font-size: 35px;}
+#contact>p {margin-bottom: 0;}
+#contact>:is(section,form) {margin-top: 48px;}
+#contact h3 {margin-top: 0;}
+#contact ul {padding: 0;}
+#contact li {padding: 10px; display: flex; align-items: baseline;}
+#contact li::before {width: 35px; text-align: center;}
+@font-face {font-family: fs; src: url(fs.woff2);} .fs::before {font-family: fs;}
+.m::before {content: '\f041';}
+.e::before {content: '\f0e0';}
+.n::before {content: '\f879';}
+.e>a {color: #d62e33;}
+#contact nav {display: flex; gap: 10px;}
+#contact nav>a {width: 40px; text-align: center; height: 40px; line-height: 40px;
+  border: solid 1px #ced4da; transition: .15s ease-in-out;}
+#contact nav>a:hover {background: #d62e33; color: #fff; border-color: #d62e33;}
+@font-face {font-family: fb; src: url(fb.woff2);} .fb::before {font-family: fb;}
+.t::before {content: '\f099';}
+.f::before {content: '\f39e';}
+.i::before {content: '\f16d';}
+.d::before {content: '\f17d';}
+.p::before {content: '\f0d2';}
+#contact :is(button,[placeholder]) {outline: 0;}
+#contact :is([placeholder],button):focus {box-shadow: 0 0 0 .2em #007bff40;
+  border-color: #80bdff;}
+#contact [placeholder] {box-sizing: border-box; width: 100%; padding: 10px;
+  border: solid 1px #ced4da;}
+#contact input {margin-bottom: 10px;}
+#contact textarea {vertical-align: middle; height: 150px; resize: none;}
+#contact>form span {color: #d62e33;}
+#contact button {background: #d62e33; padding: 10px 20px;
+  border: solid 1px #0000; cursor: pointer;}
+
+@media (width<768px) {#countdown {flex-flow: column;}}
+@media (width>575px) {.c {padding-inline: calc((100% - 514px)/2);}}
+@media (width>767px) {.c {padding-inline: calc((100% - 694px)/2);}
+  #countdown>span {width: calc((100% - 75px)/4);}
+  #contact {display: grid; grid: auto-flow/1fr 1fr; align-items: center; gap: 0 40px;}
+  #contact>:is(h2,p) {grid-column: span 2;}}
+@media (width>991px) {.c {padding-inline: calc((100% - 934px)/2);}}
+@media (width>1199px) {.c {padding-inline: calc((100% - 1114px)/2);}}
+@media (width>1399px) {.c {padding-inline: calc((100% - 1294px)/2);}}
