@@ -20,11 +20,11 @@ $(function(){
     $('#band p').not($(e.target).next()).slideUp();
   });
 
-  let t=(new Date('Thu Aug 31 2023 16:00:00').getTime()-new Date().getTime())/1000,
+  let s=(new Date('Thu Aug 31 2023 16:00:00').getTime()-new Date().getTime())/1000,
     d,D,h,H,m,M,S;
   const T=document.querySelectorAll('#countdown>span');
   function f(){
-    d=t/60/60/24, D=Math.floor(d);
+    d=s/60/60/24, D=Math.floor(d);
     h=(d-D)*24, H=Math.floor(h);
     m=(h-H)*60, M=Math.floor(m);
     S=Math.round((m-M)*60)
@@ -34,7 +34,7 @@ $(function(){
     T[2].textContent=M+' m';
     T[3].textContent=S+' s';
   }
-  f(); setInterval(()=>{t--; f();},1000);
+  f(); setInterval(()=>{s--; f();},1000);
 
   const i=document.querySelector('#contact textarea'),
     c=document.querySelector('#contact>form span');

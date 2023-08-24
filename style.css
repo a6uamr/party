@@ -6,6 +6,7 @@ body, h1, h2, #band, #band p {margin: 0;}
 .c {box-sizing: border-box; padding: 100px 13px;}
 a, button {color: inherit; -webkit-tap-highlight-color: #0000;}
 a {text-decoration: none;}
+button {cursor: pointer;}
 button, [placeholder] {font-family: inherit; font-size: 1em;}
 
 #home {background: linear-gradient(#d62e3399,#d62e3399),
@@ -14,7 +15,7 @@ button, [placeholder] {font-family: inherit; font-size: 1em;}
 #home>nav {background: #111; font-size: 25px; width: 0; overflow: hidden;
   height: 100vh; position: fixed;}
 #home>nav>:hover {color: #d62e33;}
-#home button {background: 0; padding: 20px 20px 5px; border: 0; cursor: pointer;}
+#home button {background: 0; padding: 20px 20px 5px; border: 0;}
 .x {float: right;}
 .x::before {content: '\f00d';}
 #home>nav>[href='#home'] {clear: right;}
@@ -29,8 +30,7 @@ h1::before {content: '\064f'; font-weight: 700; vertical-align: 44px;}
 #band {list-style: none; text-align: center;}
 #band h2 {background: #d62e3399; font-weight: 500; font-size: 1.75em;
   line-height: 1.2; padding: 10px; cursor: pointer;}
-#band>:nth-child(1)>h2::before {content: '\fe74'; font-size: 2em;
-  line-height: .1;}
+#band>:nth-child(1)>h2::before {content: '\fe74'; font-size: 2em; line-height: .1;}
 #band p {background: #ccc; padding: 10px;}
 #band>:not(:nth-child(1))>p {display: none;}
 
@@ -47,14 +47,14 @@ h1::before {content: '\064f'; font-weight: 700; vertical-align: 44px;}
 #contact h3 {margin-top: 0;}
 #contact ul {padding: 0;}
 #contact li {padding: 10px; display: flex; align-items: baseline;}
-#contact li::before {width: 35px; text-align: center;}
+#contact li::before {width: 35px; text-align: center; flex-shrink: 0;}
 @font-face {font-family: fs; src: url(fs.woff2);} .fs::before {font-family: fs;}
 .m::before {content: '\f041';}
 .e::before {content: '\f0e0';}
 .n::before {content: '\f879';}
 .e>a {color: #d62e33;}
 #contact nav {display: flex; gap: 10px;}
-#contact nav>a {width: 40px; text-align: center; height: 40px; line-height: 40px;
+#contact nav>a {width: 40px; text-align: center; line-height: 40px;
   border: solid 1px #ced4da; transition: .15s ease-in-out;}
 #contact nav>a:hover {background: #d62e33; color: #fff; border-color: #d62e33;}
 @font-face {font-family: fb; src: url(fb.woff2);} .fb::before {font-family: fb;}
@@ -69,10 +69,9 @@ h1::before {content: '\064f'; font-weight: 700; vertical-align: 44px;}
 #contact [placeholder] {box-sizing: border-box; width: 100%; padding: 10px;
   border: solid 1px #ced4da;}
 #contact input {margin-bottom: 10px;}
-#contact textarea {vertical-align: middle; height: 150px; resize: none;}
+#contact textarea {display: block; height: 150px; resize: none;}
 #contact>form span {color: #d62e33;}
-#contact button {background: #d62e33; padding: 10px 20px;
-  border: solid 1px #0000; cursor: pointer;}
+#contact button {background: #d62e33; padding: 10px 20px; border: solid 1px #0000;}
 
 @media (width<768px) {#countdown {flex-flow: column;}}
 @media (width>575px) {.c {padding-inline: calc((100% - 514px)/2);}}
