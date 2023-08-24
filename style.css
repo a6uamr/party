@@ -35,7 +35,7 @@ h1::before {content: '\064f'; font-weight: 700; vertical-align: 44px;}
 #band>:not(:nth-child(1))>p {display: none;}
 
 #countdown {background: linear-gradient(#d62e3399,#d62e3399),
-  url(invitation-2508607__340.jpg) 25%/cover; display: flex; gap: 25px;}
+  url(invitation-2508607__340.jpg) 23%/cover; display: flex; gap: 25px;}
 #countdown>span {font-weight: 500; font-size: 30px;
   text-align: center; box-sizing: border-box; padding: 40px; border: solid 1px;}
 
@@ -45,9 +45,9 @@ h1::before {content: '\064f'; font-weight: 700; vertical-align: 44px;}
 #contact>p {margin-bottom: 0;}
 #contact>:is(section,form) {margin-top: 48px;}
 #contact h3 {margin-top: 0;}
-#contact ul {padding: 0;}
-#contact li {padding: 10px; display: flex; align-items: baseline;}
-#contact li::before {width: 35px; text-align: center; flex-shrink: 0;}
+#contact ul {padding-left: 0;}
+#contact li {padding: 5px; display: flex; align-items: baseline;}
+#contact li::before {width: 40px; text-align: center; flex-shrink: 0;}
 @font-face {font-family: fs; src: url(fs.woff2);} .fs::before {font-family: fs;}
 .m::before {content: '\f041';}
 .e::before {content: '\f0e0';}
